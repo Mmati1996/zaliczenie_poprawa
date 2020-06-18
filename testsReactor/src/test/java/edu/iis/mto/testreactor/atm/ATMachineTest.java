@@ -43,11 +43,14 @@ public class ATMachineTest {
         Currency curr = Currency.getInstance("PLN");
         ATMachine atm= new ATMachine(bank,curr);
         try{
-            atm.withdraw(pin,card,money);
+            atm.withdraw(pin,card,new Money(10,Currency.getInstance("PLN")));
         }catch (Exception e){
         }
 
     }
+
+
+
 
 
 }
